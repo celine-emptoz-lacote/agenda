@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url(fond.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: black;
+    font-family: 'Courgette', cursive;
+
+}
+
+p::after , p::before {
+    content: " ";
+    width: 20%;
+    display:inline-block; 
+    vertical-align: middle; 
+    height: 2px; 
+    background: black;
+
+}
+
+p {
+    margin-bottom: 2.5%;
+    color: #fe4e79;
+    font-weight: bold;
+    font-family: 'Courgette', cursive;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-column-gap: 1%;
+}
+
+.table1 {
+    grid-column: 1/1;
+    grid-row: 1/2;
+    padding: 3%; 
+}
+
+.scroll {
+grid-column: 2/2;
+   grid-row: 1/ span 3;
+   height: 73vh; 
+   overflow:auto; 
+   border-top:solid 1px black; 
+   border-bottom:solid 1px black;
+}
+
+
+.table2 {
+    
+    border-collapse: collapse;
+    border: 1px solid black;
+    background-color: #e8e8e6;
+    
+}
+
+
+.table2 th {
+    border: 1px solid black;
+    background-color: #fe4e79;
+    width: 5%;
+    
+    
+}
+
+.table2 td {
+    border-left: solid 1px #fe4e79;
+    border-bottom: solid 1px #fe4e79;
+    height: 50px;
+    width: 14%;
+    font-family: 'Courgette', cursive;
+}
+
+
+.td {
+    background-color: #fe4e79;
+    border-radius: 50%;
+    color: white
+}
+.div {
+    grid-column: 1/1;
+    grid-row: 2/3;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    height: 30%;
+   
+}
+
+.DivLegende {
+    background-color: #bbc7d381;
+}
+
+h2 {
+    text-decoration: underline;
+    font-family: 'Courgette', cursive;
+}
+
+.div div {
+    margin: 1% auto;
+    width: 40%;
+    height: 60%;
+}
+
+.pause {
+    background-color: #e6a7b7;
+
+}
+
+.sport {
+    background-color: #a49884;
+}
+
+.travail {
+    background-color: #bbc7d3;
+}
+
+
+   
+
+a {
+    grid-column: 1/1;
+    grid-row: 3/3;
+    text-decoration: none;
+    text-align: CENTER;
+    padding: 5%;
+    margin: auto;
+    background-color: #fe4e79;
+    font-family: 'Courgette', cursive;
+    color: white;
+    border-radius: 10px;
+}
+
+a:hover {
+    background-color: #fe4e7a98;
+    color: black;
+}
+
+.important {
+    color: red;
+}
+
+
+/******* Formulaire *********/
+
+form {
+    float: right;
+   
+    margin-right: 12%;
+    width: 50%;
+    padding: 4%;
+    
+}
+
+fieldset {
+    background-color: rgba(255, 255, 255, 0.651);
+    border: 2px solid black;
+}
+
+legend {
+    padding: 1%;
+    background-color: #fe4e79;
+    color: white;
+    border-radius: 5px;
+}
+
+form div {
+    width: 60%;
+    margin: 1% auto;
+}
+
+.formP {
+    width: 100%;
+}
+
+#FormP::after , #FormP::before {
+    content: " ";
+    width: 15%;
+    display:inline-block; 
+    vertical-align: middle; 
+    height: 2px; 
+    background: black;
+
+}
+
+input[type="submit"] {
+    background-color: #fe4e79;
+    padding: 1%;
+    color: white;
+}
+
+.FormA {
+    clear: both;
+    padding: 1%;
+    background-color: black;
+}

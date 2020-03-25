@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajout d'un rendez-vous</title>
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="agenda.css">
+</head>
+<body>
+    <header>
+        <h1>Mon agenda Web !</h1>
+    </header>
+    <main>
+        <form action="agenda.html">
+            <fieldset> 
+                <legend>Rendez-vous à planifier</legend> 
+                <div>
+                    <label for="titre">Evenement :</label>
+                    <input type="text" id="titre" placeholder=" Titre de l'événement" maxlength="30" name="titre" required >
+                </div>
+                
+                <div>
+                    <label for="categorie" >Choisir la catégorie :</label>
+                    <select name="categorie" id="categorie">
+                    <option value="sport">sport</option>
+                    <option value="repas">Restaurent/repas</option>
+                    <option value="travail">Travail</option>
+                </select>
+                </div>
+
+                <div>
+                    <p id="FormP">Rendez-vous est il important ?</p>
+                    <div>
+                        <label for="oui">Oui</label>
+                        <input type="radio" id="oui" name="reponse">
+
+                        <label for="non">Non</label>
+                        <input type="radio" id="non" name="reponse" checked>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="dateRdv">Date du rendez-vous</label>
+                    <input type="date" id="dateRdv" required>
+                </div>
+
+                <div>
+                    <label for="description">Description :</label>
+                    <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                </div>
+              
+                <input type="submit">
+
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <a class="FormA" href="agenda.html">Retour</a>
+    </footer>
+        
+
+    
+    
+</body>
+</html>
